@@ -70,7 +70,7 @@ function playThatBeat(e) {
 
         // Then after you display the word set a 200 ms timer, and then run the removeWord function
         // And pass the elem argument to it.
-        setTimeout(removeWord, 200, bigDiv);
+        setTimeout(removeWord, 100, bigDiv);
 
     }
 
