@@ -9,9 +9,14 @@
 
 .challenge-card {
     max-width: 360px;
+    height: 290px;
+    flex: 1 1 260px;
     width: calc(100% - 2em);
-    flex: 1 1 auto;
     margin: 1em;
+}
+
+.mdl-card__supporting-text {
+  height: 80px;  
 }
 
 .challenge-card:hover {
@@ -22,7 +27,7 @@
     margin-top: 0;
 }
 
-/* Demo style */
+/* Default style */
 .challenge-card>.mdl-card__title {
     color: #fff;
     height: 176px;
@@ -33,13 +38,10 @@
     color: #fff;
 }
 
-/* Demo style ^^^^^ */
+/* Default style ^^^^^ */
 
 @media screen and (min-width: 650px) {
     .challenge-list {
-        flex-direction: row;
+        flex-flow: row wrap;
     }
-    /* .challenge-card {
-        
-    } */
 }

@@ -1,7 +1,3 @@
-fetch('./challenges.json')
-
-document.body.onload = addChallenges(challenges)
-
 const createCard = (challenge) => {
     const { title, bg, detailsText, initLink, finalLink } = challenge
     const card = document.createElement('div')
@@ -28,16 +24,28 @@ const createCard = (challenge) => {
     finalBtn.href = finalLink
 
     cardTitleContainer.appendChild(cardTitle)
+    cardTitleContainer.style.background = `url(${bg}) center / cover`
     cardBorder.appendChild(initialBtn)
     cardBorder.appendChild(finalBtn)
 
     card.appendChild(cardTitleContainer)
     card.appendChild(cardDetails)
     card.appendChild(cardBorder)
+
+    const listSection = document.getElementById('list')
+    listSection.appendChild(card)
 }
 
-function addChallenges(challenges) {
-    challenges.forEach(challenge => {
-        createCard(challenge)
-    });
+function addChallenges() {
+    // The JSON imported below should only have the challenges that I have completed
+    fetch('https://raw.githubusercontent.com/sherwino/JavaScript30/master/public/js/challenges.json')
+    .then(response => response.json())
+    .then((challenges => {
+        console.log('Received Challanges JSON', challenges)
+        challenges.forEach(challenge => {
+            createCard(challenge)
+        });
+    }));
 }
+
+document.onload = addChallenges()
