@@ -1,0 +1,45 @@
+.challenge-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: red;
+}
+
+.challenge-card {
+    max-width: 360px;
+    width: calc(100% - 2em);
+    flex: 1 1 auto;
+    margin: 1em;
+}
+
+.challenge-card:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.hero > h1 {
+    margin-top: 0;
+}
+
+/* Demo style */
+.challenge-card>.mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
+}
+
+.challenge-card>.mdl-card__menu {
+    color: #fff;
+}
+
+/* Demo style ^^^^^ */
+
+@media screen and (min-width: 650px) {
+    .challenge-list {
+        flex-direction: row;
+    }
+    /* .challenge-card {
+        
+    } */
+}

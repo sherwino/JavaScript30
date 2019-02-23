@@ -1,0 +1,28 @@
+[
+    { 
+        "id": 1,
+        "title": "JavaScript Drum Kit",
+        "bg": "bg.jpg",
+        "detailsText": "Details",
+        "initLink": "./",
+        "finalLink": "./"
+    },
+
+    { 
+        "id": 2,
+        "title": "JS and CSS Clock",
+        "bg": "bg.jpg",
+        "detailsText": "Details",
+        "initLink": "./",
+        "finalLink": "./"
+    },
+
+    { 
+        "id": 3,
+        "title": "CSS Variables",
+        "bg": "bg.jpg",
+        "detailsText": "Details",
+        "initLink": "./",
+        "finalLink": "./"
+    }
+ ]
