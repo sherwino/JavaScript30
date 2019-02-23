@@ -4,7 +4,7 @@
         "title": "JavaScript Drum Kit",
         "bg": "https://i.gyazo.com/f17d74321bf9a16eff4a8bfb62fe21bb.gif",
         "detailsText": "Details",
-        "initLink": "./01 - JavaScript Drum Kit/index-START.html",
+        "initLink": "./01 - JavaScript Drum Kit/original/index-START.html",
         "finalLink": "./01 - JavaScript Drum Kit/index.html"
     },
 
@@ -13,7 +13,7 @@
         "title": "JS and CSS Clock",
         "bg": "https://i.imgur.com/99itKdn.jpg",
         "detailsText": "Details",
-        "initLink": "./02 - JS and CSS Clock/index-START.html",
+        "initLink": "./02 - JS and CSS Clock/original/index-START.html",
         "finalLink": "./02 - JS and CSS Clock/index.html"
     },
 
@@ -22,7 +22,7 @@
         "title": "CSS Variables",
         "bg": "https://i.imgur.com/99itKdn.jpg",
         "detailsText": "Details",
-        "initLink": "./03 - CSS Variables/index-START.html",
+        "initLink": "./03 - CSS Variables/original/index-START.html",
         "finalLink": "./03 - CSS Variables/index.html"
     }
  ]
