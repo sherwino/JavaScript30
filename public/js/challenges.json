@@ -3,7 +3,7 @@
         "id": 1,
         "title": "JavaScript Drum Kit",
         "bg": "https://i.gyazo.com/f17d74321bf9a16eff4a8bfb62fe21bb.gif",
-        "detailsText": "Details",
+        "detailsText": "This course is pretty cool because it gives me somelight reading while I work on bigger projects. At the same time it reminds me of some concepts that I may have missed, or barely used. In this project we used addEventListener, something that I don't remember ever using in Vanilla. Along with document.querySelector, something that I haven't used in a long time. When it comes to element selection in vanilla js I tend to use document.getElementsByClassName, or the one for id. Oh yeah and I have never used the <kbd> element/tag and the data-key binding to in HTML. Cool stuff.",
         "initLink": "./01 - JavaScript Drum Kit/original/index-START.html",
         "finalLink": "./01 - JavaScript Drum Kit/index.html"
     },
