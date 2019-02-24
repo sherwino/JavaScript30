@@ -4,19 +4,18 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    background: red;
 }
 
 .challenge-card {
     max-width: 360px;
-    height: 290px;
+    height: 300px;
     flex: 1 1 260px;
     width: calc(100% - 2em);
     margin: 1em;
 }
 
 .mdl-card__supporting-text {
-  height: 80px;  
+  height: 90px;  
 }
 
 .challenge-card:hover {
