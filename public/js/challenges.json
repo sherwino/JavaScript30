@@ -3,7 +3,7 @@
         "id": 1,
         "title": "JavaScript Drum Kit",
         "bg": "https://i.gyazo.com/f17d74321bf9a16eff4a8bfb62fe21bb.gif",
-        "detailsText": "In this project we used addEventListener, something that I don't remember ever using in Vanilla. Along with document.querySelector, something that I haven't used in a long time. When it comes to element selection in vanilla js I tend to use document.getElementsByClassName, or the one for id. Oh yeah and I have never used the <kbd> element/tag and the data-key binding to in HTML. Cool stuff.",
+        "detailsText": "In this project we used addEventListener, something that I don't remember ever using in vanilla. Oh yeah and I have never used the <kbd> element/tag and the data-key binding to in HTML. Cool stuff.",
         "initLink": "./01 - JavaScript Drum Kit/original/index-START.html",
         "finalLink": "./01 - JavaScript Drum Kit/index.html"
     },
@@ -11,8 +11,8 @@
     { 
         "id": 2,
         "title": "JS and CSS Clock",
-        "bg": "https://i.imgur.com/99itKdn.jpg",
-        "detailsText": "Details",
+        "bg": "https://i.gyazo.com/e2c69d25373aecba637a959b0498011c.gif",
+        "detailsText": "In the clock project I found myself making little customizations to make it look better, took off transition animations, and I am not certain about how I am calc hours yet.",
         "initLink": "./02 - JS and CSS Clock/original/index-START.html",
         "finalLink": "./02 - JS and CSS Clock/index.html"
     },

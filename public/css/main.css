@@ -8,14 +8,14 @@
 
 .challenge-card {
     max-width: 360px;
-    height: 300px;
+    height: 360px;
     flex: 1 1 260px;
     width: calc(100% - 2em);
     margin: 1em;
 }
 
 .mdl-card__supporting-text {
-  height: 90px;  
+  height: 120px;  
 }
 
 .challenge-card:hover {
