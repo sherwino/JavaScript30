@@ -20,8 +20,8 @@
     { 
         "id": 3,
         "title": "CSS Variables",
-        "bg": "https://i.imgur.com/99itKdn.jpg",
-        "detailsText": "Details",
+        "bg": "https://i.imgur.com/wOJ03Ic.png",
+        "detailsText": "Learned how to make CSS variables without SASS or LESS, and messed around with some other CSS properties for a more responsive experience.",
         "initLink": "./03 - CSS Variables/original/index-START.html",
         "finalLink": "./03 - CSS Variables/index.html"
     }

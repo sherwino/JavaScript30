@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+
+  .controls {
+    margin: 0 15% 50px 15%;
+
+    display: flex;
+  }
+
+  input {
+    width: 100px;
+  }
+
+  :root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+  }
+
+  .container {
+    max-height: 68vh;
+    width: 65vw;
+    margin: 0 15%;
+    padding: var(--spacing);
+    background: var(--base);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .main-img {
+    filter: blur(var(--blur));
+    height: calc(100% - var(--spacing));
+    max-width: calc(100% - var(--spacing));
+  }
+
+  .h1 {
+    color: var(--base);
+  }
+
+  @media screen and (max-width: 400px) {
+    .title {
+      font-size: 10vw;
+    }
+    .controls {
+      font-size: 6vw;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
