@@ -24,5 +24,14 @@
         "detailsText": "Learned how to make CSS variables without SASS or LESS, and messed around with some other CSS properties for a more responsive experience.",
         "initLink": "./03 - CSS Variables/original/index-START.html",
         "finalLink": "./03 - CSS Variables/index.html"
+    },
+
+    { 
+        "id": 4,
+        "title": "Array Cardio Day 1",
+        "bg": "https://i.imgur.com/99itKdn.jpg",
+        "detailsText": "Learned how to make CSS variables without SASS or LESS, and messed around with some other CSS properties for a more responsive experience.",
+        "initLink": "./04 - Array Cardio Day 1/original/index-START.html",
+        "finalLink": "./04 - Array Cardio Day 1/index.html"
     }
  ]
