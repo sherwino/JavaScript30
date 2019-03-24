@@ -1,16 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Array Cardio 💪</title>
-    <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
-    <script src="./script.js"></script>
-  </body>
+    <header>
+      <h2 class="titulo">Array Cardio</h2>
+      <section class="summary">
+        This project was originally a console only assignment, but I decided to
+        spice it up a little. Thought it might be a good idea to bring Vuejs
+        into the mix so that I could render the results. Using Vuejs and
+        Vuetify...a material design component library for Vue.
+      </section>
+    </header>
 
+    <div id="app">
+      <v-app id="inspire">
+        <v-layout row>
+          <v-flex xs12 sm8 offset-sm3>
+            <v-card>
+              <v-toolbar color="blue" dark>
+                <v-toolbar-title>Scientist, Inventors, and People</v-toolbar-title>
+                <v-spacer></v-spacer>
+              </v-toolbar>
+
+              <v-list two-line>
+                <template v-for="(item, index) in items">
+                  <v-subheader v-if="item.header" :key="item.header">
+                    {{ item.header }}
+                  </v-subheader>
+
+                  <v-divider
+                    v-else-if="item.divider"
+                    :key="index"
+                    :inset="item.inset"
+                  ></v-divider>
+
+                  <v-list-tile v-else :key="item.name + index" avatar @click="">
+                    <v-list-tile-avatar>
+                      <img v-if="item.avatar" :src="item.avatar" />
+                      <v-icon v-if="!item.avatar">people</v-icon>
+                    </v-list-tile-avatar>
+
+                    <v-list-tile-content>
+                      <v-list-tile-title
+                        v-html="item.name"
+                      ></v-list-tile-title>
+                      <v-list-tile-sub-title
+                        v-html="item.subtitle"
+                      ></v-list-tile-sub-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                </template>
+              </v-list>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-app>
+    </div>
+
+    <!-- Vuejs production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      let items = [];
+      items.push({ header: "Filter the list of inventors to show those that were born in the 1500s" })
+      const divider = { divider: true, inset: true }
+      filter.forEach(inventor => {
+        let inventorObj = {
+          avatar: inventor.avatar,
+          name: `${inventor.first} ${inventor.last}`,
+          subtitle: `${inventor.first} was born on ${inventor.year}, and passed away on ${inventor.passed}`,
+        }
+
+        items.push(inventorObj)
+        items.push(divider)
+      });
+
+      items.push({ header: "Give us an array of the inventors' first and last names" })
+      map.forEach(inventor => {
+        let inventorObj = {
+          name: inventor,
+        }
+
+        items.push(inventorObj)
+        items.push(divider)
+      })
+
+      items.push({ header: "Sort the inventors by birthdate, oldest to youngest" })
+      sorted.forEach(inventor => {
+        let inventorObj = {
+          avatar: inventor.avatar,
+          name: `${inventor.first} ${inventor.last}`,
+          subtitle: `${inventor.first} was born on ${inventor.year}, and passed away on ${inventor.passed}`,
+        }
+
+        items.push(inventorObj)
+        items.push(divider)
+      })
+
+      items.push({ header: "How many years did all the inventors live?" })
+      if (reduce) {
+        let inventorObj = {
+          name: `They lived for: ${reduce} years`,
+        }
+
+        items.push(inventorObj)
+        items.push(divider)
+      }
+
+      items.push({ header: "Sort the inventors by years lived" })
+      sortedYears.forEach(inventor => {
+        let inventorObj = {
+          avatar: inventor.avatar,
+          name: `${inventor.first} ${inventor.last}`,
+          subtitle: `${inventor.first} lived for ${(inventor.passed - inventor.year)} years`,
+        }
+
+        items.push(inventorObj)
+        items.push(divider)
+      })
+
+      items.push({ header: "Sort the people alphabetically by last name" })
+      sortedPeople.forEach(person => {
+        let personObj = {
+          name: person,
+        }
+
+        items.push(personObj)
+        items.push(divider)
+      })
+
+      items.push({ header: "Sum up the instances of each of these" })
+      let carObj = {
+          avatar: 'https://i.imgur.com/UXNwa6Z.png',
+          name: 'Car',
+          subtitle: reducedData.car
+        }
+        items.push(carObj)
+        items.push(divider)
+
+      let truckObj = {
+          avatar: 'https://i.imgur.com/UXNwa6Z.png',
+          name: 'Truck',
+          subtitle: reducedData.truck
+        }
+        items.push(truckObj)
+        items.push(divider)
+
+      let bikeOBj = {
+          avatar: 'https://i.imgur.com/UXNwa6Z.png',
+          name: 'Bike',
+          subtitle: reducedData.bike
+        }
+        items.push(bikeOBj)
+        items.push(divider)
+
+      let walkObj = {
+          avatar: 'https://i.imgur.com/UXNwa6Z.png',
+          name: 'Walk',
+          subtitle: reducedData.walk
+        }
+        items.push(walkObj)
+        items.push(divider)
+
+      let vanObj = {
+          avatar: 'https://i.imgur.com/UXNwa6Z.png',
+          name: 'Van',
+          subtitle: reducedData.van
+        }
+        items.push(vanObj)
+        items.push(divider)
+
+
+      new Vue({
+        el: "#app",
+        data() {
+          return { items };
+        }
+      });
+    </script>
+  </body>
 </html>

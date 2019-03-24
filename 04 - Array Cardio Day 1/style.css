@@ -1,0 +1,17 @@
+html * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    font-size: 10rem;
+    line-height: 10rem;
+    color: #2196f3;
+}
+
+.summary {
+    font-size: 2rem;
+    width: 80%;
+    margin: 2rem 15%;
+}

@@ -29,9 +29,18 @@
     { 
         "id": 4,
         "title": "Array Cardio Day 1",
-        "bg": "https://i.imgur.com/99itKdn.jpg",
-        "detailsText": "Learned how to make CSS variables without SASS or LESS, and messed around with some other CSS properties for a more responsive experience.",
+        "bg": "https://i.gyazo.com/f4e38abf2ced60058eae614d0d2a3eec.png",
+        "detailsText": "This was supposed to be a console.log assignment, but I decided to just render out everything instead using vue.js.",
         "initLink": "./04 - Array Cardio Day 1/original/index-START.html",
         "finalLink": "./04 - Array Cardio Day 1/index.html"
+    },
+
+    { 
+        "id": 5,
+        "title": "Flex Panel Gallery",
+        "bg": "https://i.imgur.com/99itKdn.jpg",
+        "detailsText": "Don't know what I am going to do with this one.",
+        "initLink": "./05 - Flex Panel Gallery/original/index-START.html",
+        "finalLink": "./05 - Flex Panel Gallery/index.html"
     }
  ]
