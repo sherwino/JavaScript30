@@ -37,11 +37,31 @@
       // Array.prototype.sort()
       // 3. Sort the inventors by birthdate, oldest to youngest
       // This is one that I didn't remmeber how to do
-      const sorted = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
-        
+      // To compare numbers instead of strings, the compare function can simply subtract b from a. The following function will sort the array ascending (if it doesn't contain Infinity and NaN):
+      // One thing that I forgot about this is that the method modifies the original array, amature mistake, so here is a new var.
+      // Spread operator helped me avoid making a 2D arrays.
+      const newInventors = Array.of(...inventors);
+
+      // VERSION A
+      // const sorted = newInventors.sort((a, b) => a.year > b.year ? 1 : -1); // this version works with lexological ordering
+
+      // VERSION B
+      // This is the way Wes Bos did it
+      // const sorted = newInventors.sort((a,b) => {
+      //   if (a.year > b.year) {
+      //     return 1;
+      //   } else {
+      //     return -1;
+      //   }
+      // });
+
+      // VERSION C
+      // This only works with numbers
+      const sorted = newInventors.sort((a, b) => a.year - b.year);
+       
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live?
-      const yearsLived = (inventor => inventor.passed - inventor.year);
+      const yearsLived = (inventor) => inventor.passed - inventor.year;
       const reduce = inventors.reduce((total, inventor) => {
         return total + yearsLived(inventor);
 
@@ -51,7 +71,14 @@
 
   
       // 5. Sort the inventors by years lived
-      const sortedYears = inventors.sort((a, b) => yearsLived(a) > yearsLived(b) ? -1 : 1);
+      // Lived the most years to the least.
+      // Don't forget sort affects the original array.
+
+      // VERSION A
+      // const sortedYears = inventors.sort((a, b) => yearsLived(a) > yearsLived(b) ? -1 : 1);
+
+      //VERSION B
+      const sortedYears = inventors.sort((a, b) => yearsLived(a) - yearsLived(b));
 
       // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
       // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
