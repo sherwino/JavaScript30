@@ -29,7 +29,7 @@
     { 
         "id": 4,
         "title": "Array Cardio Day 1",
-        "bg": "https://i.gyazo.com/925fe65a019556538732999d31659726.png",
+        "bg": "https://i.gyazo.com/e8aac662011517910f8843ec60089471.png",
         "detailsText": "This was supposed to be a console.log assignment, but I decided to just render out everything instead using vue.js.",
         "initLink": "./04 - Array Cardio Day 1/original/index-START.html",
         "finalLink": "./04 - Array Cardio Day 1/index.html"
