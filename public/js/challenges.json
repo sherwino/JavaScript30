@@ -38,9 +38,19 @@
     { 
         "id": 5,
         "title": "Flex Panel Gallery",
-        "bg": "https://i.imgur.com/99itKdn.jpg",
-        "detailsText": "Don't know what I am going to do with this one.",
+        "bg": "https://i.gyazo.com/d95d61340fc0d054a741718fd4dd1636.gif",
+        "detailsText": "Really cool use of Flexbox, transitions, and event listeners.",
         "initLink": "./05 - Flex Panel Gallery/original/index-START.html",
         "finalLink": "./05 - Flex Panel Gallery/index.html"
+    },
+
+    { 
+        "id": 6,
+        "title": "Flex Panel Gallery",
+        "bg": "https://i.imgur.com/99itKdn.jpg",
+        "detailsText": "Don't know what I am going to do with this one.",
+        "initLink": "./06 - Type Ahead/original/index-START.html",
+        "finalLink": "./06 - Type Ahead/index.html"
     }
+
  ]
