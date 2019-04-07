@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>JS Drum Kit</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="./assets/script.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/script.js"></script>
+  <!--Footer Stuff -->
+  <link rel="stylesheet" type="text/css" media="screen" href="../public/css/footer.css">
+  <script src="../public/js/footer.js"></script>
+</head>
 
-  <body>
+<body>
 
-    <div class="bigwords">PLAY THAT BEAT</div>
+  <div class="bigwords">PLAY THAT BEAT</div>
+  <section class="main">
 
     <div class="keys">
       <div data-key="65" class="key">
@@ -50,17 +54,32 @@
         <span class="sound">tink</span>
       </div>
     </div>
+  </section>
 
-    <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
-    <audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
-    <audio data-key="68" src="./assets/sounds/kick.wav"></audio>
-    <audio data-key="70" src="./assets/sounds/openhat.wav"></audio>
-    <audio data-key="71" src="./assets/sounds/boom.wav"></audio>
-    <audio data-key="72" src="./assets/sounds/ride.wav"></audio>
-    <audio data-key="74" src="./assets/sounds/snare.wav"></audio>
-    <audio data-key="75" src="./assets/sounds/tom.wav"></audio>
-    <audio data-key="76" src="./assets/sounds/tink.wav"></audio>
+  <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
+  <audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
+  <audio data-key="68" src="./assets/sounds/kick.wav"></audio>
+  <audio data-key="70" src="./assets/sounds/openhat.wav"></audio>
+  <audio data-key="71" src="./assets/sounds/boom.wav"></audio>
+  <audio data-key="72" src="./assets/sounds/ride.wav"></audio>
+  <audio data-key="74" src="./assets/sounds/snare.wav"></audio>
+  <audio data-key="75" src="./assets/sounds/tom.wav"></audio>
+  <audio data-key="76" src="./assets/sounds/tink.wav"></audio>
 
-  </body>
+  <footer id="dynamic-footer" class="footer">
+    <a href="/" class="hero__title">
+      <span class="word">JavaScript</span><span class="num">30</span>
+    </a>
+
+    <div id="current-page"></div>
+
+    <div class="social">
+      <span>Made with &#10084; by <a href="//sherwino.co">Sherwino</a></span>
+      <a href="github.com/sherwino">gh</a>
+      <a href="linkedin.com/in/sherwino">li</a>
+      <a href="instagram.com/sherwinograms">ig</a>
+    </div>
+  </footer>
+</body>
 
 </html>
