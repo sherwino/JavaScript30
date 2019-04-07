@@ -1,3 +1,12 @@
+html * {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .challenge-list {
     display: flex;
     flex-direction: column;
