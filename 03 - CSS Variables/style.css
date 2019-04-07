@@ -1,4 +1,15 @@
 body {
+  background: #193549;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title, .controls {
     text-align: center;
     background: #193549;
     color: white;
@@ -7,10 +18,8 @@ body {
     font-size: 50px;
   }
 
-
   .controls {
     margin: 0 15% 50px 15%;
-
     display: flex;
   }
 
@@ -25,19 +34,25 @@ body {
   }
 
   .container {
-    max-height: 68vh;
-    width: 65vw;
-    margin: 0 15%;
-    padding: var(--spacing);
+    width: 37.5%;
+    /* margin: 0 35%; */
+    padding-left: var(--spacing);
+    padding-bottom: var(--spacing);
+    /* padding-right: var(--spacing); */
+    padding-top: var(--spacing);
     background: var(--base);
     box-sizing: border-box;
     overflow: hidden;
   }
 
   .main-img {
+    /* margin-top: var(--spacing); */
+    /* margin-left: var(--spacing); */
+    /* margin-right: calc(var(--spacing)); */
+    /* margin-bottom: var(--spacing); */
     filter: blur(var(--blur));
-    height: calc(100% - var(--spacing));
-    max-width: calc(100% - var(--spacing));
+    /* height: calc(100% - var(--spacing)); */
+    width: calc(100% - var(--spacing));
   }
 
   .h1 {

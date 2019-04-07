@@ -1,4 +1,5 @@
-html * {
+header,
+#app {
     font-family: 'Roboto', sans-serif;
 }
 
