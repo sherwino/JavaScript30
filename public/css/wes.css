@@ -30,11 +30,11 @@ html {
   -ms-text-size-adjust: 100%;
 }
 a:focus {
-  outline: thin dotted;
+  /* outline: thin dotted; */
 }
 a:active,
 a:hover {
-  outline: 0;
+  /* outline: 0; */
 }
 h1 {
   font-size: 2em;
@@ -193,7 +193,7 @@ textarea {
   margin: 0;
 } */
 a {
-  color: #ffc600;
+  /* color: #ffc600; */
 }
 .course-details {
   background: rgba(0,0,0,0.05);
@@ -601,11 +601,11 @@ h6 {
 p {
   line-height: 1.7;
 }
-a {
+/* a {
   text-decoration: none;
   color: #262626;
   border-bottom: 2px solid #ffc600;
-}
+} */
 ul,
 ol {
   /* margin: 0; */
@@ -666,8 +666,8 @@ ol {
   font-size: 1.5em;
   position: relative;
   top: 0.07em;
-}
-.hero__title:before {
+} */
+/* .hero__title:before {
   z-index: -1;
   content: '_';
   position: absolute;

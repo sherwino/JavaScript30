@@ -18,27 +18,28 @@ body,html {
   position: fixed;
   text-align: center;
   width: 100%;
-  height: 5em;
+  height: 4em;
   top: 0px;
   color: #fff;
-  font-size: 3em;
-  line-height: 5em;
+  font-size: 2em;
+  line-height: 4em;
   background: #000;
 }
 
 .bigwords-pressed {
-  font-size: 5em;
-  line-height: 3em;
-  height: 3em;
+  font-size: 4em;
+  line-height: 2em;
+  height: 2em;
   color: #fff;
 }
 
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 .key {
@@ -71,4 +72,19 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+@media all and (max-width: 575px) {
+  .key {
+    border-radius: .3rem;
+    margin: .5rem;
+    font-size: 1rem;
+    padding: .5rem .2rem;
+    transition: all .07s ease;
+    width: 8rem;
+  }
+
+  .main {
+    height: calc(100vh - 10rem);
+  }
 }
