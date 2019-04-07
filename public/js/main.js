@@ -15,7 +15,6 @@ const createCard = (challenge) => {
     cardBorder.className = 'mdl-card__actions mdl-card--border'
     initialBtn.className = 'mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect'
     finalBtn.className = 'mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect'
-    console.log('details', detailsText)
     cardTitle.innerText = title
     cardDetails.innerText = detailsText
     initialBtn.innerText = 'Initial'
@@ -45,7 +44,9 @@ function addChallenges() {
         challenges.forEach(challenge => {
             createCard(challenge)
         });
+        
     }));
 }
 
 document.onload = addChallenges()
+

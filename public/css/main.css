@@ -41,7 +41,39 @@
     background: rgba(0,0,0,.56);
     width: 100%;
 }
-/* Default style ^^^^^ */
+
+.footer {
+    height: 5rem;
+    background: linear-gradient(45deg, #00537E,  #18163d);
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    color: #fff;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.hero__title {
+    margin: 0 1em 0 0.3em;
+    justify-self: left;
+    align-self: flex-start;
+}
+
+.footer a.hero__title span.word,
+.footer a.hero__title span.num {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+#current-page {
+    flex: 2;
+    width: 100%;
+    text-align: center;
+}
 
 @media screen and (min-width: 650px) {
     .challenge-list {
