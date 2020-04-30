@@ -30,5 +30,6 @@ When you reach that page you will note that each project is going to have three 
 - Get a really good lighthouse score, use next gen image formats, source set? 🙃
 - Make sure this page is resusable so that you could use it to make a portfolio type thing
 - Use tags so that you could say when a new version was released like devdocs.io 
-- Better docs...JSDocs
-- TypeScript or Flow
+- Better docs...explain how to run this locally, JSDocs 🙃
+- TypeScript or Flow 🙃 🙃
+- Restructure project, turn this into a mono repo, bring good ol lerna in 🙃
